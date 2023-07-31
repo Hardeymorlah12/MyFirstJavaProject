@@ -1,6 +1,6 @@
 package Assignment.Interface;
 
-public class Son extends Father implements Fatherly,Motherly{
+public class Son extends FatherImpl implements Father, Mother {
     private boolean haveDimple;
     public boolean isHaveDimple() {
         return haveDimple;

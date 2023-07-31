@@ -1,6 +1,6 @@
 package Assignment.Interface;
 
-public class Daughter extends Mother implements Motherly, Fatherly {
+public class Daughter extends MotherImpl implements Mother, Father {
     private boolean canDance;
     private String longHair;
     @Override
@@ -52,4 +52,13 @@ public class Daughter extends Mother implements Motherly, Fatherly {
     }
 
 
+    @Override
+    public String doHouseholdChores() {
+        return null;
+    }
+
+    @Override
+    public String plaiting() {
+        return null;
+    }
 }
