@@ -11,10 +11,10 @@ public class CodeClass {
         try{
             FileOutputStream fout = new FileOutputStream("MrJohn.txt");
             String s = """
-                    The world is full of mysteries which is beyond the human comprehension
+                    The world is full of mysteries which is beyond human comprehension
                     God has made the world so beautiful that you've got to praise Him everyday
-                    It is so much fun coding here with you sir.
-                    I wish I'm granted this opportunity. Thanks in Advance.
+                    Slow and steady wins the race.
+                    It's nice having to write to file and read from file.
                     """;
             byte b [] = s.getBytes();
             fout.write(b);
