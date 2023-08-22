@@ -8,6 +8,7 @@ public class Goat extends Animal {
     public void setColor(String color) {
         this.color = color;
     }
+    
     public void setHeight(int height) {
         this.height = height;
     }
