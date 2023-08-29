@@ -1,6 +1,7 @@
 package Assignment;
 
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -19,10 +20,10 @@ public class MyStudent {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         MyStudent student1 = new MyStudent(1, "Saheed", 35);
         MyStudent student2 = new MyStudent(2, "Hardeymorlah", 25);
-        MyStudent student3= new MyStudent(3, "Ayinde", 15);
+        MyStudent student3 = new MyStudent(3, "Ayinde", 15);
         MyStudent student4 = new MyStudent(4, "Nafisat", 55);
         MyStudent student5 = new MyStudent(5, "Adewale", 75);
         MyStudent student6 = new MyStudent(6, "Fatihah", 20);
@@ -39,11 +40,11 @@ public class MyStudent {
         students.add(student6);
 
         Iterator itr = students.iterator();
-        while (itr.hasNext()){
-            MyStudent st = (MyStudent)itr.next();
-            System.out.println("Student's Id: " + st.rollno + " " + "Student's Name: " + st.name + " "
-                    + "Student's Age: " + " " + st.age + " " + "Institution: " + school);
+        while (itr.hasNext()) {
+            MyStudent st = (MyStudent) itr.next();
+             System.out.println("Student's Id: " + st.rollno + " " + "Student's Name: " + st.name + " "
+                     + "Student's Age: " + " " + st.age + " " + "Institution: " + school);
+
         }
     }
-
 }
